@@ -1,0 +1,7 @@
+.icons {
+    filter: invert(79%) sepia(47%) saturate(5961%) hue-rotate(169deg) brightness(95%) contrast(83%);
+}
+
+.bg-transition {
+    background: linear-gradient(to top, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, #ffffff, rgba(53, 168, 224, 0.5));
+}

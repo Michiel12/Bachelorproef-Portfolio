@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.color {
+    color: #35a8e0;
+}
+
+.backgroundcolor {
+    background-color: #35a8e0;
+}
+
+.bg-transition {
+  background: linear-gradient(to top, #ffffff, #ffffff, #ffffff, rgba(53, 168, 224, 0.5));
+}

@@ -1,0 +1,46 @@
+<nav class="fixed top-0 left-0 w-full bg-white shadow-lg z-10">
+    <div class="flex items-center justify-between px-8 py-4">
+        <div class="text-gray-700 font-medium text-3xl hidden md:block -mt-1.5">
+            <button (click)="navigate('/home')">
+                Michiel Van Loy
+            </button>
+        </div>
+        <button (click)="toggleMenu()" class="block md:hidden">
+            <img src="../../assets/images/burger-bar.png" alt="Menu" class="h-8">
+        </button>
+        <div class="hidden md:flex space-x-4">
+            <button class="text-gray-700 font-medium rounded-md px-3 py-2 navigation" (click)="navigate('/home')" [ngClass]="{'active-page': activePage == 'home'}">
+                Home
+            </button>
+            <button class="text-gray-700 font-medium rounded-md px-3 py-2 navigation" (click)="navigate('/over-mij')" [ngClass]="{'active-page': activePage == 'over-mij'}">
+                Over mij
+            </button>
+            <button class="text-gray-700 font-medium rounded-md px-3 py-2 navigation" (click)="navigate('/stage')" [ngClass]="{'active-page': activePage == 'stage'}">
+                Stage
+            </button>
+            <button class="text-gray-700 font-medium rounded-md px-3 py-2 navigation" (click)="navigate('/projecten')" [ngClass]="{'active-page': activePage == 'projecten' || activePage == 'angular-challenge' || activePage == 'project4.0'}">
+                Projecten
+            </button>
+        </div>
+        <a href="mailto:michielvanloy2003@gmail.com" class="text-white font-medium rounded-md px-6 py-2 contact">
+            Contact
+        </a>
+    </div>
+
+    @if (isSmallMenu) {
+        <div class="block md:hidden px-8 py-4 space-y-4">
+            <button class="block w-full text-left text-gray-700 font-medium rounded-md px-1 navigation" (click)="navigate('/home')" [ngClass]="{'active-page-small': activePage == 'home'}">
+                Home
+            </button>
+            <button class="block w-full text-left text-gray-700 font-medium rounded-md px-1 navigation" (click)="navigate('/over-mij')" [ngClass]="{'active-page-small': activePage == 'over-mij'}">
+                Over mij
+            </button>
+            <button class="block w-full text-left text-gray-700 font-medium rounded-md px-1 navigation" (click)="navigate('/stage')" [ngClass]="{'active-page-small': activePage == 'stage'}">
+                Stage
+            </button>
+            <button class="block w-full text-left text-gray-700 font-medium rounded-md px-1 navigation" (click)="navigate('/projecten')" [ngClass]="{'active-page-small': activePage == 'projecten' || activePage == 'angular-challenge' || activePage == 'project4.0'}">
+                Projecten
+            </button>
+        </div>
+    }  
+</nav>

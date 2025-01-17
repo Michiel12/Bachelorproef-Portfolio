@@ -1,0 +1,16 @@
+.active-page {
+    color: #35a8e0;
+    background-color: #f3f4f6;
+}
+
+.active-page-small {
+    color: #35a8e0;
+}
+
+.navigation:hover {
+    color: #35a8e0;
+}
+
+.contact {
+    background-color: #35a8e0;
+}
